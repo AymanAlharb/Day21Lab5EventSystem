@@ -2,11 +2,12 @@ package com.example.day21lab5eventsystem.Controller;
 
 import com.example.day21lab5eventsystem.Api.ApiResponse;
 import com.example.day21lab5eventsystem.Model.Event;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Date;
-
+@JsonFormat(pattern = "yyyy-mm-dd")
 @RestController
 @RequestMapping("/api/v1/event")
 public class EventController {
